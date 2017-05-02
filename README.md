@@ -1,2 +1,1 @@
-# enrichr_api
-REST APIs provided by Enrichr
+# REST APIs provided by Enrichr
