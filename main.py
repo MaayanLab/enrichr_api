@@ -30,8 +30,9 @@ def get_libraries():
     return libs
 
 def main():
-    for library in get_libraries():
-        crisp = open('test.txt', 'r').read()
+    crisp = open('test.txt', 'r').read()
+    libraries = get_libraries()
+    for library in libraries:
         data = get_enrichr_results(library, crisp, 'Sample gene list')
         print('http://amp.pharm.mssm.edu/Enrichr/enrich?dataset={0}'.format(data[0]))
         # Result fields:
